@@ -20,3 +20,8 @@ Route::get('/', function () {
 
 
 Route::get('/insert',[ArticleController::class,'saveToDatabase'])->name('inserisci');
+
+
+Route::get('/form',[ArticleController::class,'create'])->name('creazione form');
+
+Route::post('/store',[ArticleController::class,'saveToDatabase'])->name('store');
